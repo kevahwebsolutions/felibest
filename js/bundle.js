@@ -23110,9 +23110,7 @@ function findOffset(element) {
                   return function (array, val) {
                     for (
                       minIndex = -1, maxIndex = array.length;
-                      maxIndex - minIndex > 1;
-
-                    )
+                      maxIndex - minIndex > 1;)
                       array[(guess = (maxIndex + minIndex) >> 1)] <= val
                         ? (minIndex = guess)
                         : (maxIndex = guess);
